@@ -11,6 +11,105 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Barlow', 'Fraunces'; 
+  font-family: 'custom'; 
 }
 
+/** Option desktop **/
+header {
+  background-image: url('./img/svgs/bg-pattern-intro.svg');
+  background-repeat: revert;
+  background-position: center;
+  background: rgb(255,143,112);
+  background: linear-gradient(90deg, rgba(255,143,112,1) 0%, rgba(255,143,112,1) 35%, rgba(255,61,84,1) 100%);
+  width: 100%;
+  height: calc(39vh - 10px);
+  border-bottom-left-radius: 50px;
+  color: #FFF;
+}
+
+.header__div__img {
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+}
+
+.header__img {
+  width: 5em;
+  height: 2em;
+}
+
+.header_div__content_head {
+  display: flex; 
+  justify-content: space-between;
+  padding: 2em 3em;
+}
+
+.header__div__options {
+  display: flex; 
+}
+
+.ul__option__desktop {
+  display: flex;
+}
+
+.ul__button__desktop {
+  display: flex;
+  
+}
+
+li {
+  list-style-type: none;
+  padding: 0.5em 2em;
+}
+
+a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.li__option__desktop::after {
+  padding-left: 0.5em;
+  content: url('./img/svgs/icon-arrow-light.svg');
+  cursor: pointer;
+}
+
+li.signup,
+li.startfree {
+  background-color: #FFF;
+  color: transparent;
+  border-radius: 30px;
+} 
+
+li.learnmore {
+  border-radius: 30px;
+  border: 1px;
+  border-style: solid;
+  border-color: #FFF;
+}
+
+ul> li.signup> a,
+ul> li.startfree> a{  
+  color: rgba(255,61,84,1);
+}
+
+ul> li.startfree{  
+  margin-right: 0.5em;
+}
+
+.header_div__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header__title {
+  margin-top: 60px;
+}
+
+.header__sub__title {
+  margin-top: 25px;
+}
+
+.header_div__button_action {
+  margin-top: 35px;
+}

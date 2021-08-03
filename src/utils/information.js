@@ -64,7 +64,8 @@ export const options = {
                 }
             ] 
         } 
-    }
+    },
+    secctions: [],
 }; 
 
 export default options;
