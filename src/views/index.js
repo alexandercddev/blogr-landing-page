@@ -5,6 +5,10 @@
  */
 import React, { useState } from 'react';  
 import {options} from '../utils/information';
+import {Designed} from './components/designed'
+import {StateOf} from './components/stateof'
+import {Free} from './components/free'
+import {Author} from './components/author'
 
 export function BlogrPage(props) {
 
@@ -47,6 +51,10 @@ export function BlogrPage(props) {
                 </div>
             </div>
         </header>
+        <Designed options={options.sections.designed}/>
+        <StateOf options={options.sections.stateof}/>
+        <Free options={options.sections.free}/>
+        <Author options={options.author}/>
     </div>);
 }
 

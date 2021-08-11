@@ -11,7 +11,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'custom'; 
+  font-family: 'Custom', 'Ubuntu'; 
 }
 
 /** Option desktop **/
@@ -19,8 +19,8 @@ header {
   background-image: url('./img/svgs/bg-pattern-intro.svg');
   background-repeat: revert;
   background-position: center;
-  background: rgb(255,143,112);
-  background: linear-gradient(90deg, rgba(255,143,112,1) 0%, rgba(255,143,112,1) 35%, rgba(255,61,84,1) 100%);
+  background: hsl(13, 100%, 72%);
+  background: linear-gradient(90deg, hsl(13, 100%, 72%) 0%, hsl(353, 100%, 62%) 100%);
   width: 100%;
   height: calc(39vh - 10px);
   border-bottom-left-radius: 50px;
@@ -89,7 +89,7 @@ li.learnmore {
 
 ul> li.signup> a,
 ul> li.startfree> a{  
-  color: rgba(255,61,84,1);
+  color: hsl(353, 100%, 62%);
 }
 
 ul> li.startfree{  
@@ -112,4 +112,49 @@ ul> li.startfree{
 
 .header_div__button_action {
   margin-top: 35px;
+}
+
+/** Designed **/
+section.section_designed {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 100px;
+}
+
+.container___title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+.container {
+  display: flex; 
+  flex-direction: row;
+  /*background-image: url('./img/svgs/illustration-editor-desktop.svg');
+  background-repeat: revert;
+  background-position: center;*/
+}
+
+.content__info {
+  margin-bottom: 2.5em; 
+}
+
+div.content__info> h3.content__title {
+  margin-bottom: 1.5em;
+}
+
+section.section_designed> div.container> div.content {
+ width: 50%;
+}
+
+
+/** Author **/
+.attribution {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: hsl(237, 23%, 32%);
+  color: #FFF;
+  padding: 0.5em;
 }
