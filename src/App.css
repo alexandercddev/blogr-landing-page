@@ -3,29 +3,28 @@
 * @description:
 * @date: 01/Agosto/2021
 **/ 
-@import url('https://fonts.google.com/specimen/Overpass?preview.text_type=custom');
-@import url('https://fonts.google.com/specimen/Ubuntu?preview.text_type=custom');
+@import url('https://fonts.googleapis.com/css2?family=Overpass,wght@0,500;1,400&&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,500;1,400&display=swap');
 
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Custom', 'Ubuntu'; 
+  font-family: 'Overpass', 'Ubuntu', sans-serif; 
 }
 
 /** Option desktop **/
-header {
-  background-image: url('./img/svgs/bg-pattern-intro.svg');
-  background-repeat: revert;
-  background-position: center;
-  background: hsl(13, 100%, 72%);
-  background: linear-gradient(90deg, hsl(13, 100%, 72%) 0%, hsl(353, 100%, 62%) 100%);
+header {  
+  background-image: linear-gradient(90deg, hsl(13, 100%, 72%) 0%, hsl(353, 100%, 62%) 100%);
   width: 100%;
-  height: calc(39vh - 10px);
+  height: calc(70vh - 10px);
   border-bottom-left-radius: 50px;
   color: #FFF;
-}
+  /*background: url('./img/svgs/bg-pattern-intro.svg') ;*/
+  background-repeat: revert;
+  background-position: center;  
+} 
 
 .header__div__img {
   display: flex;
