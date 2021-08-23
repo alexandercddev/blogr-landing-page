@@ -12,19 +12,20 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Overpass', 'Ubuntu', sans-serif; 
+  font-size: 500;
 }
 
 /** Option desktop **/
 header {  
-  background-image: linear-gradient(90deg, hsl(13, 100%, 72%) 0%, hsl(353, 100%, 62%) 100%);
+  background: url('./assets/svgs/bg-pattern-intro.svg'), linear-gradient(90deg, hsl(13, 100%, 72%) 0%, hsl(353, 100%, 62%) 100%);
   width: 100%;
-  height: calc(70vh - 10px);
+  height: 75vh;
   border-bottom-left-radius: 50px;
-  color: #FFF;
-  /*background: url('./img/svgs/bg-pattern-intro.svg') ;*/
-  background-repeat: revert;
-  background-position: center;  
+  color: #FFF;   
+  background-position: 25% center;
 } 
+
+ 
 
 .header__div__img {
   display: flex;
@@ -68,7 +69,7 @@ a {
 
 .li__option__desktop::after {
   padding-left: 0.5em;
-  content: url('./img/svgs/icon-arrow-light.svg');
+  content: url('./assets/svgs/icon-arrow-light.svg');
   cursor: pointer;
 }
 

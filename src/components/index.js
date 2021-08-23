@@ -5,10 +5,10 @@
  */
 import React, { useState } from 'react';  
 import {options} from '../utils/information';
-import {Designed} from './components/designed'
-import {StateOf} from './components/stateof'
-import {Free} from './components/free'
-import {Author} from './components/author'
+import {Designed} from './designed'
+import {StateOf} from './stateof'
+import {Free} from './free'
+import {Author} from './author'
 
 export function BlogrPage(props) {
 
