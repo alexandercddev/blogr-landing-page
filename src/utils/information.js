@@ -114,6 +114,8 @@ export const options = {
     },
     author:{
         name: 'alexandercds',
+        webSite: "https://alexandercd.herokuapp.com/about-me",
+        webFrontend: "https://www.frontendmentor.io?ref=challenge",
         social: [
             
         ]

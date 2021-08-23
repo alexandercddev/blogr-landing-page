@@ -6,11 +6,20 @@
 import React, { useState } from 'react';    
 
 export function Author(props) {
-    const {name} = props.options;
- 
-    return (<div class="attribution">
-        <span>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</span> 
-        <span>Coded by <a href="#">{name !== undefined ? name : 'Your Name Here'}</a>.</span>
+    const {name, webFrontend, webSite} = props.options; 
+    const handleClick = (url) => window.open(url);
+
+    return (<div className="attribution">
+        <span>
+            Challenge by <a  href="#" onClick={()=> {
+                handleClick(webFrontend)
+            }}>Frontend Mentor</a>.
+        </span> 
+        <span>
+            Coded by <a href="#" onClick={() => {
+                handleClick(webSite)
+            }}>{name !== undefined ? name : 'Your Name Here'}</a>.
+        </span>
     </div>);
 }
   
