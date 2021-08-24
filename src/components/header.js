@@ -4,6 +4,7 @@
  * @date: 22/Agosto/2021
 **/
 import React, { useState } from 'react';    
+import logo from '../assets/svgs/logo.svg';
 
 export function Header(props) {
     const { options } = props;
@@ -13,7 +14,7 @@ export function Header(props) {
             <div className="header_div__content_head">
                 <div className="header__div__options">
                     <div className="header__div__img">
-                        <img alt="Blogr" className="header__img" src='logo.svg'></img>
+                        <img alt="Blogr" className="header__img" src={logo}></img>
                     </div>
                     <ul className="ul__option__desktop">
                         {options.main.options.map((item, index) => {
