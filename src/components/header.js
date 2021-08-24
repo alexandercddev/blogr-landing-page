@@ -34,8 +34,10 @@ export function Header(props) {
                 </div>
             </div>
             <div className="header_div__content">
-                <h2 className="header__title">{options.content.title}</h2>
-                <p className="header__sub__title">{options.content.subTitle}</p>
+                <div className="header_div__titles">
+                    <h2 className="header__title">{options.content.title}</h2>
+                    <p className="header__sub__title">{options.content.subTitle}</p>
+                </div>
                 <div className="header_div__button_action">
                     <ul className="ul__button__desktop">
                         {options.content.buttons.map((item, index) => {
