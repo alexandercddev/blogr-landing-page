@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/blogr-landing-page/static/css/main.d1546339.chunk.css",
-    "main.js": "/blogr-landing-page/static/js/main.99333f22.chunk.js",
-    "main.js.map": "/blogr-landing-page/static/js/main.99333f22.chunk.js.map",
+    "main.js": "/blogr-landing-page/static/js/main.dea20238.chunk.js",
+    "main.js.map": "/blogr-landing-page/static/js/main.dea20238.chunk.js.map",
     "runtime-main.js": "/blogr-landing-page/static/js/runtime-main.efd8f939.js",
     "runtime-main.js.map": "/blogr-landing-page/static/js/runtime-main.efd8f939.js.map",
     "static/js/2.f03c6c65.chunk.js": "/blogr-landing-page/static/js/2.f03c6c65.chunk.js",
@@ -14,12 +14,13 @@
     "static/js/2.f03c6c65.chunk.js.LICENSE.txt": "/blogr-landing-page/static/js/2.f03c6c65.chunk.js.LICENSE.txt",
     "static/media/App.css": "/blogr-landing-page/static/media/icon-arrow-light.9ba0f38e.svg",
     "static/media/illustration-editor-desktop.c6c8050a.svg": "/blogr-landing-page/static/media/illustration-editor-desktop.c6c8050a.svg",
+    "static/media/logo.1591bc20.svg": "/blogr-landing-page/static/media/logo.1591bc20.svg",
     "static/media/logo.6ce24c58.svg": "/blogr-landing-page/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.efd8f939.js",
     "static/js/2.f03c6c65.chunk.js",
     "static/css/main.d1546339.chunk.css",
-    "static/js/main.99333f22.chunk.js"
+    "static/js/main.dea20238.chunk.js"
   ]
 }
