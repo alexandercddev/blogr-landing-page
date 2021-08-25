@@ -31,7 +31,7 @@ header {
   justify-content: center;
 }
 
-.header__img {
+.logo__img {
   width: 5em;
   height: 2em;
 }
@@ -189,6 +189,41 @@ div.content__r> img {
   background-position: 25%; 
   height: auto;
   width: auto;
+}
+
+footer.footer {
+  display: flex; 
+  background-color: hsl(240, 10%, 16%);
+  color:  hsl(0, 0%, 100%);
+  border-top-right-radius: 5em;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  padding-left: 100px;
+}
+
+.footer__img {
+  margin-left: 30px; 
+}
+
+.footer__img> img.logo__img {
+  width: 6.5em;
+  height: 2.5em;
+}
+
+.footer_options {
+  display: flex; 
+  justify-content: space-evenly;
+  width: 75%; 
+}
+
+a.footer__a {
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+}
+
+.footer__section> a.footer__a {
+  font-weight: bold;
+  
 }
 
 /** Author **/
