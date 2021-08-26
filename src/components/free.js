@@ -15,7 +15,7 @@ export function Free(props) {
                 <div className="content content__l">
                     <img alt="Free" src={illustration}></img>
                 </div>
-                <div className="content content__center__vertical">
+                <div className="content content__center__vertical free__text">
                     {content.map((item, index) => {
                         return (<div key={item.title.toLowerCase()} className="content__info">
                             <h3 className="content__title">
