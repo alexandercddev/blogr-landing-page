@@ -33,9 +33,9 @@ export const options = {
                     key: 'connect',
                     text: 'Connect',
                     dropDown: [
-                        'contact',
-                        'newsletter',
-                        'linkedIn',
+                        'Contact',
+                        'Newsletter',
+                        'LinkedIn',
                     ],  
                 }
             ],

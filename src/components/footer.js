@@ -16,7 +16,7 @@ export function Footer(props) {
                 {options.map((item, index) => {
                     return (
                         <div key={'footer-' + item.key}>
-                            <ul>
+                            <ul className="footer__ul">
                                 <li className="footer__section">
                                     <a href={"#" + item.key} className="footer__a">
                                         {item.text}
