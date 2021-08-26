@@ -191,6 +191,13 @@ div.content__r> img {
   width: auto;
 }
 
+div.content__l> img { 
+  background-position: 25%; 
+  height: auto;
+  width: auto;
+  margin-left: -280px;
+}
+
 .section_state {
   height: 28vh;
   display: flex; 
@@ -199,18 +206,20 @@ div.content__r> img {
   border-bottom-left-radius: 5em;
   border-top-right-radius: 5em;
   background-position-y: 80%; 
-  background-position-x: -80%; 
+  background-position-x: -55%; 
   background-repeat: no-repeat;
   padding-left: 50px;
 }
 
 .state__content.state__img> img {
+  width: auto;
+  height: auto;
   margin-top: -65px;
 }
 
 .state__text {
   margin-right: 100px;
-  margin-left: 40px;
+  margin-left: 120px;
 }
 
 .state__text> .content__title {
@@ -221,6 +230,14 @@ div.content__r> img {
 .state__text> .content__text {
   color: hsl(0, 0%, 100%);
 }
+
+.section_free {
+  margin: 100px 0 100px;
+}
+
+/*.container>.content {
+  margin-right: 60px;
+} */
  
 footer.footer {
   display: flex; 
@@ -270,25 +287,46 @@ a.footer__a {
 .attribution> span> a {
   color: #FFF;
 }
-
-
-
-/** Desktop Max 1440 **/
-
+ 
+/** Desktop Max 1440 **/ 
 @media (max-width: 1440px) {
   header {  
     height: calc(100vw - 50em); 
   }
 }
- 
 
-@media (max-width: 960px) {
+/** **/
+@media (min-width: 1440px) and  (max-width: 1920px) {
+   
+  .section_free>.container {
+    margin: 150px 0 100px;
+  }
+  .section_state {  
+    height: 44vh;
+    background-position-y: 80%; 
+    background-position-x: -25%; 
+    background-repeat: no-repeat;
+    padding-left: 50px;
+  }
+  div.content__r> img {
+    background-position: 25%;
+    height: auto;
+    width: auto;
+  }
+} 
+@media (min-width: 360px) and (max-width: 1200px) {
   header {   
     width: 100vw;
-    height: 80vh; 
+    height: 100vh; 
+    background-position: center;
+    background-size: 200vh;
+    background-position-x: 45%;
+    background-position-y: 50%;
+    border-bottom-left-radius: 100px;
   }
-  .ul__option__desktop,
-  .ul__button__desktop {
+
+  .header__div__options>.ul__option__desktop,
+  .header_div__button {
     display: none;
   }
   .header_div__content,
@@ -300,6 +338,9 @@ a.footer__a {
   h2.header__title {
     text-align: center;
     font-size: 3.7em;
+  }
+  h2.header__title {
+    margin-top: 45px;
   }
   p.header__sub__title {
     text-align: center;
