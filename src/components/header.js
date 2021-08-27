@@ -7,8 +7,11 @@ import React, { useState } from 'react';
 
 
 export function Header(props) {
+    const [className, setClaseName] = useState('');
     const { options, logo } = props;
-    
+    const handleClose = (event) => {
+        setClaseName(className === '' ? 'header__close' : '')
+    }
     return (
         <header className="header__container" >
             <div className="header_div__content_head">
@@ -32,6 +35,10 @@ export function Header(props) {
                             </li>)
                         })}
                     </ul>
+                </div>
+                <div 
+                    className={`header__menu ${className}`} 
+                    onClick={handleClose}>
                 </div>
             </div>
             <div className="header_div__content">

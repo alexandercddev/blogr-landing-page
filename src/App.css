@@ -128,6 +128,56 @@ h2.header__title {
   margin-top: 35px;
 }
 
+.header__menu {
+  display: none;
+  width: 35px;
+  height: 35px;
+  content: url('./assets/svgs/icon-hamburger.svg');
+  cursor: pointer;  
+  -webkit-animation: rotate-top 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+	        animation: rotate-top 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+
+}
+
+.header__close {  
+  content: url('assets/svgs/icon-close.svg'); 
+  -webkit-animation: rotate-right 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+	        animation: rotate-right 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+  
+ 
+@keyframes rotate-top {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+  }
+}
+
+@keyframes rotate-right {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    -webkit-transform-origin: right;
+            transform-origin: right;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    -webkit-transform-origin: right;
+            transform-origin: right;
+  }
+}
+
+
+
 /** Designed **/
 section.section_designed {
   display: flex;
@@ -354,6 +404,9 @@ a.footer__a {
     text-align: center; 
     font-size: 1.5em;
   }
+  .header__menu { 
+    display: flex;
+  }  
   section.section_designed { 
     flex-direction: column;
     padding-top: 50px; 
@@ -385,7 +438,7 @@ a.footer__a {
     text-align: center;
   } 
   div.content__r> img {
-    width: 100vw;
+    width: 100%;
     height: auto;
     content: url('./assets/svgs/illustration-editor-mobile.svg');
   } 
@@ -399,7 +452,7 @@ a.footer__a {
     padding-bottom: 100px;
   } 
   .state__content.state__img> img {
-    width: 100vw;
+    width: 100%;
     height: 100vw;
     margin-top: -165px;
   }
@@ -413,7 +466,7 @@ a.footer__a {
     margin-left: 0; 
   } 
   div.content__l> img { 
-    width: 100vw;
+    width: 100%;
     height: auto;
     margin-left: 0;
     content: url('./assets/svgs/illustration-laptop-mobile.svg');
