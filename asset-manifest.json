@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/blogr-landing-page/static/css/main.a6f1c68a.chunk.css",
-    "main.js": "/blogr-landing-page/static/js/main.0551fde1.chunk.js",
-    "main.js.map": "/blogr-landing-page/static/js/main.0551fde1.chunk.js.map",
+    "main.css": "/blogr-landing-page/static/css/main.e21b0cb5.chunk.css",
+    "main.js": "/blogr-landing-page/static/js/main.80c0c91f.chunk.js",
+    "main.js.map": "/blogr-landing-page/static/js/main.80c0c91f.chunk.js.map",
     "runtime-main.js": "/blogr-landing-page/static/js/runtime-main.0fedefe5.js",
     "runtime-main.js.map": "/blogr-landing-page/static/js/runtime-main.0fedefe5.js.map",
-    "static/js/2.aad52552.chunk.js": "/blogr-landing-page/static/js/2.aad52552.chunk.js",
-    "static/js/2.aad52552.chunk.js.map": "/blogr-landing-page/static/js/2.aad52552.chunk.js.map",
+    "static/js/2.7216f636.chunk.js": "/blogr-landing-page/static/js/2.7216f636.chunk.js",
+    "static/js/2.7216f636.chunk.js.map": "/blogr-landing-page/static/js/2.7216f636.chunk.js.map",
     "static/js/3.43eafbf1.chunk.js": "/blogr-landing-page/static/js/3.43eafbf1.chunk.js",
     "static/js/3.43eafbf1.chunk.js.map": "/blogr-landing-page/static/js/3.43eafbf1.chunk.js.map",
     "index.html": "/blogr-landing-page/index.html",
-    "static/css/main.a6f1c68a.chunk.css.map": "/blogr-landing-page/static/css/main.a6f1c68a.chunk.css.map",
-    "static/js/2.aad52552.chunk.js.LICENSE.txt": "/blogr-landing-page/static/js/2.aad52552.chunk.js.LICENSE.txt",
+    "static/css/main.e21b0cb5.chunk.css.map": "/blogr-landing-page/static/css/main.e21b0cb5.chunk.css.map",
+    "static/js/2.7216f636.chunk.js.LICENSE.txt": "/blogr-landing-page/static/js/2.7216f636.chunk.js.LICENSE.txt",
     "static/media/App.css": "/blogr-landing-page/static/media/illustration-laptop-mobile.fe1ec0f0.svg",
     "static/media/illustration-editor-desktop.c6c8050a.svg": "/blogr-landing-page/static/media/illustration-editor-desktop.c6c8050a.svg",
     "static/media/illustration-laptop-desktop.799209c2.svg": "/blogr-landing-page/static/media/illustration-laptop-desktop.799209c2.svg",
@@ -21,8 +21,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.0fedefe5.js",
-    "static/js/2.aad52552.chunk.js",
-    "static/css/main.a6f1c68a.chunk.css",
-    "static/js/main.0551fde1.chunk.js"
+    "static/js/2.7216f636.chunk.js",
+    "static/css/main.e21b0cb5.chunk.css",
+    "static/js/main.80c0c91f.chunk.js"
   ]
 }
