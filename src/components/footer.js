@@ -24,9 +24,9 @@ export function Footer(props) {
                                 </li>
                             </ul>
                             <ul>
-                                {item.dropDown.map((value, index) => {
+                                {item.dropDown.map((value, indx) => {
                                     return (
-                                        <li key={'option-' + index}>
+                                        <li key={'option-' + indx}>
                                             <a href="#" className="footer__a">
                                                 {value}
                                             </a>

@@ -6,12 +6,21 @@
 import React, { useState } from 'react';    
 
 export function Header(props) {
+    const { options, logo } = props;
     const [className, setClaseName] = useState('');
     const [active, setActive] = useState('');
-    const { options, logo } = props;
+    const [items, setActiveDropDown] = useState(options.main.options);
     const handleClose = (event) => {
         setClaseName(className === '' ? 'header__close' : '')
         setActive(active === '' ? 'active' : '')
+    }
+    const handleDropDown = (event) => {
+        const {id} = event.target;
+        const active = items.map((item, index) => {
+            item.active = item.key === id ? 'active' : ''; 
+            return item;
+        })
+        setActiveDropDown(active)
     }
     return (
         <header className="header__container" >
@@ -22,10 +31,27 @@ export function Header(props) {
                     </div>
                     <div className={`header__content__menu ${active}`}>
                         <ul className="ul__option__desktop">
-                            {options.main.options.map((item, index) => {
-                                return (<li key={item.key} className={"li__option__desktop " + item.key} >
-                                    <a href={"#" +item.key} className="a__option__desktop">{item.text}</a>
-                                </li>)
+                            {items.map((item, index) => {
+                                return (<>
+                                    <li 
+                                        id={item.key}
+                                        key={item.key} 
+                                        className={"li__option__desktop " + item.key} 
+                                        onClick={handleDropDown}>
+                                        <a id={item.key} href={"#" +item.key} className="a__option__desktop">{item.text}</a>
+                                    </li>
+                                    <ul className={"header__dropdown " + item.active}>
+                                        {item.dropDown.map((value, indx) => {
+                                            return (
+                                                <li key={'option-' + indx}>
+                                                    <a href="#" className="header__dropdown__a">
+                                                        {value}
+                                                    </a>
+                                                </li>
+                                            )
+                                        })}
+                                    </ul>
+                                </>)
                             })}
                         </ul>
                         <div className="header_div__button">
