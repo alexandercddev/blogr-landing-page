@@ -4,7 +4,7 @@
  * @date: 22/Agosto/2021
 **/
 import React, { useState } from 'react';    
-
+import { ReactComponent as Arrow} from '../assets/svgs/icon-arrow-light.svg'
 export function Header(props) {
     const { options, logo } = props;
     const [className, setClaseName] = useState('');
@@ -17,7 +17,11 @@ export function Header(props) {
     const handleDropDown = (event) => {
         const {id} = event.target;
         const active = items.map((item, index) => {
-            item.active = item.key === id ? 'active' : ''; 
+            item.active = item.key === id 
+                ? (
+                    item.active === 'active' ? '' : 'active'
+                ) 
+                : ''; 
             return item;
         })
         setActiveDropDown(active)
@@ -32,18 +36,18 @@ export function Header(props) {
                     <div className={`header__content__menu ${active}`}>
                         <ul className="ul__option__desktop">
                             {items.map((item, index) => {
-                                return (<>
+                                return (<div key={`header-${item.key}`} className="header__ul__content">
                                     <li 
-                                        id={item.key}
-                                        key={item.key} 
+                                        id={item.key} 
                                         className={"li__option__desktop " + item.key} 
                                         onClick={handleDropDown}>
-                                        <a id={item.key} href={"#" +item.key} className="a__option__desktop">{item.text}</a>
+                                        <span id={item.key} className="a__option__desktop">{item.text}</span>
+                                        <Arrow id={item.key} className="svg__desktop"/>
                                     </li>
-                                    <ul className={"header__dropdown " + item.active}>
+                                    <ul key={`dropdown${item.key}`} className={"header__dropdown " + item.active}>
                                         {item.dropDown.map((value, indx) => {
                                             return (
-                                                <li key={'option-' + indx}>
+                                                <li key={`option-${indx}`}>
                                                     <a href="#" className="header__dropdown__a">
                                                         {value}
                                                     </a>
@@ -51,7 +55,7 @@ export function Header(props) {
                                             )
                                         })}
                                     </ul>
-                                </>)
+                                </div>)
                             })}
                         </ul>
                         <div className="header_div__button">
